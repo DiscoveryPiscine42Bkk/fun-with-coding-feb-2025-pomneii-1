@@ -11,8 +11,15 @@ body {
     height: 100vh;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .profile-card {
     background: white;
+    margin: 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -27,16 +34,19 @@ body {
     border-radius: 50%;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
 .social-icons img {
     width: 40px;
     height: 40px;
     margin: 15px 5px 15px 5px;
 }
 
-.contact-btn {
-    display: inline-block;
+.button {
     padding: 10px 20px;
     background-color:cyan;
-    text-decoration: none;
     border-radius: 5px;
 }
