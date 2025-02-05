@@ -1,5 +1,3 @@
 #!/bin/bash
 
-files=($(ls))
-
-echo "${#files[@]}$" 
+files=($(ls)) 
