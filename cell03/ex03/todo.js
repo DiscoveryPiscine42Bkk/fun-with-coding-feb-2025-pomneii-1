@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function (){
         todoContainer.className = "todo";
         todoContainer.textContent = text;
         todoContainer.addEventListener('click', function() {
-            if (confirm("Do you want to delete this TO Do ?")) {
+            if (confirm("Do you want to delete this TO DO ?")) {
                 ftList.removeChild(todoContainer);
                 saveTodo();
             }
