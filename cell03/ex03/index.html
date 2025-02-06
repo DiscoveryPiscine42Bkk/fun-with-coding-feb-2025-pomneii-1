@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        #ft_list {
+            margin-top: 20px;
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            padding: 20px;
+            width: 400px;
+        }
+
+        .todo {
+            padding: 15px;
+            margin: 5px 0;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .todo:hover {
+            background-color: #f1f1f1;
+        }
+        
+        #new-btn {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            width: 150px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="new-btn">New</button>
+    <div id="ft_list"></div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
