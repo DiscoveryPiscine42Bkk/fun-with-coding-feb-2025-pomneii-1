@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0cff10;
+    z-index: 1000;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #d6ff9f;
+    border-radius: 5px;
+    color: black;
+}
+
+.content {
+    margin-top: 60px;
+}
+
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.about-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.showcase-section {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: azure;
+}
+
+.cer-section {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.certificates img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.icon-pic img {
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: burlywood;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-icon a {
+    text-decoration: none;color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .certificates img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .certificates img {
+        width: 70%;
+    }
+
+    .cer-section {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #0cff10;
+        z-index: 1000;
+        height: 60px;
+        padding: 20px;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .certificates img {
+        width: 60%;
+    }
+
+    .cer-section {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
