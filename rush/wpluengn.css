@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    min-width: 300px;
+
 }
 
 .nav-bar {
@@ -101,15 +103,9 @@ body {
     text-decoration: none;color: black;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1040px) {
     .certificates img {
-        width: 70%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .certificates img {
-        width: 70%;
+        width: 90%;
     }
 
     .cer-section {
@@ -139,21 +135,21 @@ body {
     }
 }
 
-@media screen and (max-width: 375px) {
-
+@media screen and (max-width: 475px) {
     .nav-bar {
         flex-direction: column;
-    }
-
-    .certificates img {
-        width: 60%;
-    }
-
-    .cer-section {
+        align-items: center;
         padding: 10px;
+    }
+
+    .nav-bar ul {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
+        width: 100%;
+    }
+
+    .nav-bar ul li {
+        display: block;
     }
 }
